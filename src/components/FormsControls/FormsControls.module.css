@@ -1,0 +1,28 @@
+.formControl.error input, .formControl.error textarea {
+    border: solid red 1px;
+}
+
+.formControl.error span {
+    color: red;
+}
+
+.formSummaryError {
+    color: red;
+}
+
+.login {
+    margin-left: 40%;
+}
+
+.login button {
+    width: 100px;
+    height: 30px;
+    background-color: #925c40;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+
+.login button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}

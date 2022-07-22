@@ -1,0 +1,35 @@
+.content {
+    grid-area: c;
+    background-color: beige;
+}
+
+.photo img {
+    width: 1000px;
+    height: 410px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin-right: 25%;
+}
+
+.type {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.picture {
+    margin: 5px;
+}
+
+.status {
+    margin-left: 10px;
+}

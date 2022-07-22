@@ -1,0 +1,21 @@
+.down {
+    grid-area: f;
+    background-color: #dcd7d7;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.down a {
+    color: black;
+}
+
+.down a:focus, .down a:hover {
+    text-decoration: none;
+}
+
+.firstBlock, .secondBlock, .thirtyBlock {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}

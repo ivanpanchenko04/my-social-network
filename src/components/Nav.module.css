@@ -1,0 +1,14 @@
+.nav {
+    grid-area: n;
+    background-color: bisque;
+}
+
+.nav a {
+    color: black;
+    display: block;
+    margin-bottom:15%;
+}
+
+.nav a:focus, .nav a:hover {
+    text-decoration: none;
+}

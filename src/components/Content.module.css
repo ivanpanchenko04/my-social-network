@@ -3,33 +3,135 @@
     background-color: beige;
 }
 
-.photo img {
-    width: 1000px;
-    height: 410px;
-}
-
 .aboutMe {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
-.info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    margin-right: 25%;
+.photoAndStatus {
+    width: 25%;
 }
 
-.type {
-    margin-right: 5px;
-    font-weight: 600;
-}
-
-.picture {
+.picture img {
     margin: 5px;
+    width: 65%;
+    border-radius: 5%;
+}
+
+.feedbackInput {
+    display: none;
+}
+
+.feedbackLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    margin: 2px 8px 5px;
+    padding: 8px 20px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+}
+
+.feedbackLabel:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 
 .status {
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.statusInput, .profileData input {
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #bdbdbd;
+    border-radius: 5%;
+}
+
+.statusInput:focus, .profileData input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.profileData textarea {
+    width: 80%;
+    height: auto;
+    border: none;
+    outline-width: 1px;
+    outline-color: gray;
+    font-size: 15px;
+}
+
+.profileData textarea:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.profileDataAndForm {
+    width: 75%;
+}
+
+.profileData {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.data {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.contacts {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.editData button {
+    width: 80px;
+    height: 40px;
+    background-color: bisque;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+
+.editData button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }

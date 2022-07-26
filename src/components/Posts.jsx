@@ -1,7 +1,6 @@
 import React from 'react';
 import s from "./Posts.module.css";
 import {Field, reduxForm} from "redux-form";
-import {maxLengthCreator, required} from "../utils/validators/validators";
 import {Textarea} from "./FormsControls/FormsControls";
 import avatar from "../img/zhivotnye_igra_sobaka_19261.jpg";
 
@@ -21,12 +20,15 @@ const PostsItem = (props) => {
 
 const Posts = React.memo((props) => {
 
-    let postsElements = props.posts
+    let postsElements = [...props.posts].reverse()
         .map(post => <PostsItem id={post.id} name={post.name} massage={post.massage} 
             key={post.id}/>);
 
     let addNewPost = (values) => {
-        props.addPost(values.newPostText);
+        if (values.newPostText) {
+            props.addPost(values.newPostText);
+            values.newPostText = "";
+        }
     }
 
     return (

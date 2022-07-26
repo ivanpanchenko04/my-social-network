@@ -28,8 +28,8 @@ let User = ({user, followingProgress, follow, unfollow}) => {
                 <div>{user.status}</div>
                 </span>
                 <span>
-                <div>{"user.location.city"}</div>
-                <div>{"user.location.country"}</div>
+                {/*<div>{"user.location.city"}</div>
+                <div>{"user.location.country"}</div>*/}
                 </span>
                 </div>
         </div>

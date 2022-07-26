@@ -4,12 +4,25 @@
 }
 
 .header img {
-    width: 90px;
-    height: auto;
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
 }
 
 .loginBlock {
     float: right;
+}
+
+.picture img {
+    width: 30px;
+    height: 30px;
+}
+
+.ifIsAuth {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 7px;
+    margin-top: 5px;
 }
 
 .loginBlock a {
@@ -22,7 +35,8 @@
     background-color: #925c40;
     font-size: 15px;
     border: 1px solid gray;
-
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .loginBlock button:hover {

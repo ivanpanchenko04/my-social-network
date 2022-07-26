@@ -39,7 +39,10 @@ const Massages = (props) => {
             massage={letter.massage} key={letter.id}/>);
 
     let addNewMessage = (values) => {
-        props.sendMessage(values.newMassageBody);
+        if (values.newMassageBody) {
+            props.sendMessage(values.newMassageBody);
+            values.newMassageBody = "";
+        }
     }
 
     if (!props.isAuth) return <Redirect to="/login"/>;
